@@ -1,0 +1,133 @@
+
+{
+    "title": {
+        "media": {
+          "url": "",
+          "caption": " <a target=\"_blank\" href=''>credits</a>",
+          "credit": ""
+        },
+        "text": {
+          "headline": "Welcome to<br>My time line",
+          "text": "<p>My working skills and experiences</p>"
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "",
+          "caption": ""
+        },
+        "start_date": {
+          "year": "2012",
+          "month":"07",
+          "day":"01"
+        },
+        "end_date": {
+          "year": "2012",
+          "month":"12",
+          "day":"31"
+        },
+        "text": {
+          "headline": "<span style='color:#47b35e'>Prima Banka Slovensko: Fraud Analyst</span>",
+          "text": "<p>Started my career as a fraud analyst in a bank, in Retail Credit Risk Department. I was investigating potential instances of fraud within an organization. Analyzed data, monitored transactions, and used specialized software to identify suspicious activity and prevent financial loss.</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "Position change"
+        },
+        "start_date": {
+          "year": "2013",
+          "month":"01",
+          "day":"01"
+        },
+        "end_date": {
+          "year": "2014",
+          "month":"12",
+          "day":"01"
+        },
+        "text": {
+          "headline": "<span style='color:#3993b4'>Prima Banka Slovensko: Credit risk analyst</span>",
+          "text": "<p>After a year, I transitioned to a role focused on analysing credit risk. I assessed the likelihood that borrowers will default on loans or other debt obligations. I analyzed financial statements, credit reports, and other data to evaluate creditworthiness and determine the risk associated with lending. </p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "Promotion"
+        },
+        "start_date": {
+          "year": "2014",
+          "month":"12"
+        },
+        "end_date": {
+          "year": "2021",
+          "month":"08",
+          "day":"31"
+        },
+        "text": {
+          "headline": "<span style='color:#a52828'>Prima Banka Slovensko: Senior Analyst</span>",
+          "text": "<p>In the end of 2014, I made a career shift by changing position to Senior Analyst. </p><p> My key responsibilities on this position were: </p><p> - preparation of regular and ad hoc reports for the Board of Directors, ensuring informed decision </p><p> - conducting client data analysis to support strategic business insights and loan approval processes </p><p> - drafting and implementing internal regulations to enhance company operations </p><p> - designing automation solutions to improve process efficiency and workflow optimization </p><p> - collaborating closely with the IT department to define software requirements and oversee testing phases</p>"
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": "New employment"
+        },
+        "start_date": {
+          "year": "2021",
+          "month":"09",
+          "day":"1"
+        },
+        "end_date": {
+          "year": "2024",
+          "month":"03",
+          "day":"1"
+        },
+        "text": {
+          "headline": "<span style='color:#3079bf'>ECCO Sko A/S: Junior RPA Developer</span>",
+          "text": "<p> As a Junior RPA developer, I was responsible for designing and implementing Blue Prism robotic process automation solutions.</p><p>Responsibilities:</p><p>-Analyzing business processes and identifying automation opportunities</p><p>-Developing and deploying RPA solutions using Blue Prism</p><p>-Collaborating with business stakeholders to gather requirements</p><p>-Providing support and maintenance for existing RPA solutions </p>"
+        }
+      },
+            {
+        "media": {
+          "url": "",
+          "caption": "Promotion"
+        },
+        "start_date": {
+          "year": "2024",
+          "month":"03"
+        },
+        "end_date": {
+          "year": "2025",
+          "month":"7",
+          "day":"31"
+        },
+        "text": {
+          "headline": "<span style='color:#d37b23'>ECCO SKO A/S: RPA Developer </span>",
+          "text": "I was promoted to medior RPA Developer. In addition to my duties as a Junior RPA Developer, I also focused on the role of a Solution Designer, where I involved planning and architecting RPA solutions to meet business requirements effectively. I helped in creating a well-structured and maintainable automation. Also I played a key role in training younger colleagues. "
+        }
+      },
+      {
+        "media": {
+          "url": "",
+          "caption": ""
+        },
+        "start_date": {
+          "year": "2025",
+          "month":"01"
+        },
+        "end_date": {
+          "year": "2025",
+          "month":"07",
+          "day":"31"
+        },
+        "text": {
+          "headline": "<span style='color:#e9b81e'>ECCO SKO A/S: Adopting Python and AI</span>",
+          "text": "<p>In 2025, I began exploring Python and its applications in AI and machine learning.</p><p>This involved:</p><p>- Taking online courses to learn Python programming</p><p>- Experimenting with Open AI and Azure Open AI libraries </p><p>- Working on personal projects to apply my knowledge</p>"
+        }
+      }
+    ]
+}
