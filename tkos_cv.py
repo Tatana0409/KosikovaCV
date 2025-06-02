@@ -37,7 +37,7 @@ st.markdown("""
         }
         .custom-title {
             font-family:"Lucida Handwriting", cursive;
-            font-size: 35px !important;
+            font-size: 50px !important;
             color: DarkBlue;
             font-weight: bold;
         }
@@ -56,48 +56,41 @@ RESUME_FILE = CURRENT_DIR / "resume.pdf"
 st.markdown("""<style>.stApp { background-color: #FAEBD7; }.css-1d391kg { color: blue; }</style>""",
             unsafe_allow_html=True
             )
-
-
 with st.container():
-    col3,col4 = st.columns(2)
-with col4:
+    col3, col4 = st.columns([3,2])
+with col3:
     st.markdown("<p class='custom-title'>Ing.Tatiana Košíková </p>",unsafe_allow_html=True)
     st.markdown("\n\n")
     st.markdown("<p class='tight-font'>PROCES AUTOMATION DEVELOPER</p>",unsafe_allow_html=True)
-    # Contact Information
-    st.markdown("<p></p>",unsafe_allow_html=True)
-    st.write("📍🗺️ Martin, Slovakia | 📧 tanicka.kosikova@gmail.com | 🔗 [LinkedIn](https://linkedin.com/in/tatiana-kosikova-b81aa7165)")
-    st.markdown("\n\n")
 
-with col3:
-    st.markdown("<p class='big-font'> Curriculum </p>",unsafe_allow_html=True)
-    st.markdown("\n\n")
-    st.markdown ("<p class='big-font'>Vitae 📜 </p>",unsafe_allow_html=True)
+# Contact Information
+with col4:
+    st.markdown("<p></p>",unsafe_allow_html=True)
+    st.write("📍🗺️ Martin, Slovakia")
+    st.write("📧 tanicka.kosikova@gmail.com")
+    st.write("🔗 [LinkedIn](https://linkedin.com/in/tatiana-kosikova-b81aa7165)")
+    #st.markdown("\n\n")
+
 st.divider()
 st.markdown("\n\n")
-st.write(""" 
-● Results-driven RPA (Robotic Process Automation) Developer with 4 years of hands-on experience 
-in developing, testing, and maintaining automation solutions across various business processes.\n\n
-● Proven ability to deliver reliable and scalable robots using leading RPA tools.\n\n 
-● Known for a proactive mindset, attention to detail, and commitment to quality. \n\n
-● Passionate about continuous learning and professional development—currently expanding skills in Python programming, 
-building simple applications, and exploring AI technologies to enhance automation capabilities and deliver smarter solutions.
-""")
-# with open(RESUME_FILE, "rb") as pdf_file:
-#     PDFbyte = pdf_file.read()
-# st.download_button(label="📥 Download Resume", data=PDFbyte, file_name="Boris_Labuda_Resume.pdf", mime="application/pdf")
 
-#timeline
 with st.container():
-    st.markdown("""""")
-    st.subheader('⏳ Career Snapshot ⏳')
-
-    # load data
-    with open('tk_career.json', "r") as f:
-        data = f.read()
-
-    # render timeline
-    timeline(data, height=500,)
+    col5,col6 = st.columns([3,2])
+with col5:
+    st.write(""" 
+    ● Results-driven RPA (Robotic Process Automation) Developer with 4 years of hands-on experience 
+    in developing, testing, and maintaining automation solutions across various business processes.\n\n
+    ● Proven ability to deliver reliable and scalable robots using leading RPA tools.\n\n 
+    ● Known for a proactive mindset, attention to detail, and commitment to quality. \n\n
+    ● Passionate about continuous learning and professional development—currently expanding skills in Python programming, 
+    building simple applications, and exploring AI technologies to enhance automation capabilities and deliver smarter solutions.
+    """)
+with col6:
+    # Interactive Download Button
+    st.subheader("📥 Download My Resume")
+    with open(RESUME_FILE, "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+    st.download_button(label="Download Resume", data=PDFbyte, file_name="KosikovaCV.pdf", mime="application/pdf")
 
 st.divider()
 with st.container():
@@ -105,7 +98,7 @@ with st.container():
     with col1:
         # ----- EXPERIENCE -----
         st.markdown("<h2 class='hd1'> 💼 Work Experience</h2>",unsafe_allow_html=True)
-        
+       # with st.expander("Process automation developer | Ecco SKO A/S"):
         st.markdown("<h3>Process automation developer | Ecco SKO A/S",unsafe_allow_html=True)
         st.caption("apr 2024 – Present")
         st.write("""
@@ -116,7 +109,8 @@ with st.container():
             - creating a well-structured and maintainable automation
             - training younger colleagues
         
-        """)        
+        """)
+        # with st.expander ("Junior Process automation developer | Ecco SKO A/S"):
         st.markdown("<h3>Junior Process automation developer | Ecco SKO A/S</h3>",unsafe_allow_html=True)
         st.caption("sep 2021 – mar 2024")
         st.write("""
@@ -158,14 +152,14 @@ with st.container():
         st.markdown("<h2 class='hd1'> 📚 Education</h2>",unsafe_allow_html=True)
         # Education
 
-        st.subheader("Matej Bel University in Banská Bystrica ")
+        st.subheader("Matej Bel University")
         st.subheader("The Faculty of Economics")
         st.write("**Master Study Program: Finance, Banking and Investment**")
-        st.write("**Main specialization: Audit/Accounting and IT technologies**")
+        st.write("**Main specialization: IT technologies, Audit/Accounting**")
         st.caption("09/2007 – 06/2012")
 
-        st.subheader("Business Academy")
-        st.caption("09/2003 – 06/2007")
+        # st.subheader("Business Academy")
+        # st.caption("09/2003 – 06/2007")
         st.divider()
         
         #certification
@@ -195,3 +189,14 @@ with st.container():
                 - English: intermediate (B2)
                 """)
 
+#timeline
+with st.container():
+    st.markdown("""""")
+    st.subheader('⏳ Career Snapshot ⏳')
+
+    # load data
+    with open('tk_career.json', "r") as f:
+        data = f.read()
+
+    # render timeline
+    timeline(data, height=500,)
