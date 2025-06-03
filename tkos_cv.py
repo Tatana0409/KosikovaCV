@@ -16,7 +16,7 @@ st.markdown("""
             font-family: "Arial", Sans-serif;
             font-weight: bold;
             padding: 0px;
-            font-size: 25px !important;
+            font-size: 20px !important;
             margin: 0px;
             line-height: 0.5;
             color: Black
@@ -44,6 +44,7 @@ st.markdown("""
         html, body, [class*="css"]  {
              line-height: 1;
         }
+    
     </style>
 """, unsafe_allow_html=True)
 
@@ -62,6 +63,7 @@ with col3:
     st.markdown("<p class='custom-title'>Ing.Tatiana Košíková </p>",unsafe_allow_html=True)
     st.markdown("\n\n")
     st.markdown("<p class='tight-font'>PROCES AUTOMATION DEVELOPER</p>",unsafe_allow_html=True)
+    st.markdown("\n\n")
 
 # Contact Information
 with col4:
@@ -98,7 +100,9 @@ with st.container():
     with col1:
         # ----- EXPERIENCE -----
         st.markdown("<h2 class='hd1'> 💼 Work Experience</h2>",unsafe_allow_html=True)
-       # with st.expander("Process automation developer | Ecco SKO A/S"):
+
+        # st.markdown("<h3>Process automation developer | Ecco SKO A/S",unsafe_allow_html=True)
+        # with st.expander("More details:"):
         st.markdown("<h3>Process automation developer | Ecco SKO A/S",unsafe_allow_html=True)
         st.caption("apr 2024 – Present")
         st.write("""
@@ -110,7 +114,9 @@ with st.container():
             - training younger colleagues
         
         """)
-        # with st.expander ("Junior Process automation developer | Ecco SKO A/S"):
+
+        # st.markdown("<h3>Junior Process automation developer | Ecco SKO A/S</h3>", unsafe_allow_html=True)
+        # with st.expander ("More details:"):
         st.markdown("<h3>Junior Process automation developer | Ecco SKO A/S</h3>",unsafe_allow_html=True)
         st.caption("sep 2021 – mar 2024")
         st.write("""
@@ -120,6 +126,8 @@ with st.container():
             - providing support and maintenance for existing RPA solutions.
         """)
 
+        # st.markdown("<h3> Senior Analyst | Prima Banka Slovensko </h3>", unsafe_allow_html=True)
+        # with st.expander("More details:"):
         st.markdown("<h3> Senior Analyst | Prima Banka Slovensko </h3>",unsafe_allow_html=True)
         st.caption("<p style='line-height: 0.2;'>dec 2014 – aug 2021</p>",unsafe_allow_html=True)
         st.write("""
@@ -130,6 +138,8 @@ with st.container():
         - collaborating closely with the IT department to define software requirements and oversee testing phases
         """)
 
+        # st.markdown("<h3>Credit risk Analyst  | Prima Banka Slovensko </h3>", unsafe_allow_html=True)
+        # with st.expander("More details:"):
         st.markdown("<h3>Credit risk Analyst  | Prima Banka Slovensko </h3>",unsafe_allow_html=True)
         st.caption("<p style='line-height: 0.2;'>jan 2013 – dec 2014</p>",unsafe_allow_html=True)
         st.write("""
@@ -139,6 +149,8 @@ with st.container():
         - evaluating creditworthiness
         """)
 
+        # st.markdown("<h3> Fraud Analyst | Prima Banka Slovensko </h3>", unsafe_allow_html=True)
+        # with st.expander("More details:"):
         st.markdown("<h3> Fraud Analyst | Prima Banka Slovensko </h3>",unsafe_allow_html=True)
         st.caption("<p style='line-height: 0.2;'>july 2012 – dec 2012</p>",unsafe_allow_html=True)
         st.write("""
